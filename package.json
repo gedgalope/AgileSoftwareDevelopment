@@ -4,10 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "install:client":"cd client && npm install",
+    "install:server":"cd server && npm install",
     "client": "cd client && npm run serve",
     "server":"node server/index.js",
     "populate":"cd server && node populate.js",
-    "test": "cd client"
   },
   "repository": {
     "type": "git",
