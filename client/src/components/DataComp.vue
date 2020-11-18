@@ -108,7 +108,7 @@ export default {
   props: {
     values: {
       type: Object,
-      default: () => "test",
+      default: () => {},
     },
   },
   computed: {},
@@ -119,6 +119,7 @@ export default {
     }),
     deleteStatement() {
       this.deletePost(this.values.id);
+      this.deleteDialog = false
     },
     updateStatement() {
       if (this.edit) {
